@@ -9,7 +9,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 // routes
-// editing
 app.use("/api/products", productRoute);
 
 app.get("/", (req, res) => {
