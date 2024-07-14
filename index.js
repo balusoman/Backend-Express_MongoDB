@@ -9,7 +9,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 // routes
-// editing
 app.use("/api/products", productRoute);
 
 app.get("/", (req, res) => {
@@ -17,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 
-mongoose.connect('mongodb+srv://balu:gGweUcraMu3u6xp4@backenddb.8d5xwtt.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://balu:ZrpnlHo77a3Cxaf6@backenddb.8d5xwtt.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB')
   .then(() => {
     console.log("Connected to database!");
     app.listen(3000, () => {
